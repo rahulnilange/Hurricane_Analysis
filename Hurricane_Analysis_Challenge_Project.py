@@ -63,9 +63,6 @@ def year_data():
     # we will append the data
     new_dict = {}
     for i in range(len(years)):
-        # create an empty list where 
-        # dictionaries will be appended
-        new_list = []
         if not new_dict.get(years[i]):
             new_dict[years[i]] = [hurricane_dict[names[i]]]
         else:
@@ -187,4 +184,5 @@ def create_damage_dict():
 
 
 create_damage_dict()
+
 print(damage_dict)   
